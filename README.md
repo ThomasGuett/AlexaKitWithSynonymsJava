@@ -19,6 +19,13 @@ in there are 3 Classes:
 with an SSMLOutputSpeechlet
 - AlexaSpeechlet.java (Main Logic in here you will provide the magic)
 
+Building the jar-File for upload into an aws-function
+- open a terminal
+- go to the rootFolder of your project (where the pom.xml is located)
+- execute: mvn assembly:assembly -DdescriptorId=jar-with-dependencies package
+
+the built "synonyms-0.0.1-SNAPSHOT-jar-with-dependencies.jar" can be found in the "target" folder
+
 All demo texts are in german, just replace them with your responses, I have not testet the classes in
 an english skill but I assume it will work, since it originates from the original Amazon Alexa Java SDK
 
